@@ -88,7 +88,7 @@ if (bookTourButton) {
     try {
       const session = await axios({
         method: 'GET',
-        url: `http://127.0.0.1:11000/api/v1/bookings/checkout-session/${tourID}`,
+        url: `/api/v1/bookings/checkout-session/${tourID}`,
       });
       console.log(session);
       console.log('this is the try block');

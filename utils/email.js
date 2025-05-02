@@ -42,7 +42,7 @@ module.exports = class Email {
             });
 
             const result = await request;
-            console.log('Email sent successfully via Mailjet:', result.body);
+            // console.log('Email sent successfully via Mailjet:', result.body);
             return { success: true }; // Simulate Nodemailer response
           } catch (error) {
             console.error(

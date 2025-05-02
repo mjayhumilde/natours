@@ -9,6 +9,7 @@ const hpp = require('hpp');
 
 // we only install this in after M V architecture
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 const globalErrorHandler = require('./controllers/errorController');
 const appError = require('./utils/appError');
@@ -113,6 +114,9 @@ app.use(
     ],
   })
 );
+
+//compress all the text that is send to clien || not working on img since they are already compress
+app.use(compression());
 
 //TEST MIDDLEWARE
 app.use((req, res, next) => {

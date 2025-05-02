@@ -3026,7 +3026,7 @@
         try {
           const res = yield axios_default({
             method: "POST",
-            url: "http://127.0.0.1:11000/api/v1/users/login",
+            url: "/api/v1/users/login",
             data: {
               email,
               password
@@ -3046,7 +3046,7 @@
         try {
           const res = yield axios_default({
             method: "GET",
-            url: "http://127.0.0.1:11000/api/v1/users/logout"
+            url: "/api/v1/users/logout"
           });
           if (res.data.status === "success") location.reload(true);
         } catch (error) {
@@ -3113,7 +3113,7 @@
       init_alert();
       updateSettings = (data, type) => __async(null, null, function* () {
         try {
-          const url = type === "password" ? "http://127.0.0.1:11000/api/v1/users/updateMyPassword" : "http://127.0.0.1:11000/api/v1/users/updateMe";
+          const url = type === "password" ? "/api/v1/users/updateMyPassword" : "/api/v1/users/updateMe";
           const res = yield axios_default({
             method: "PATCH",
             url,
@@ -3208,7 +3208,7 @@
           try {
             const session = yield axios_default({
               method: "GET",
-              url: `http://127.0.0.1:11000/api/v1/bookings/checkout-session/${tourID}`
+              url: `/api/v1/bookings/checkout-session/${tourID}`
             });
             console.log(session);
             console.log("this is the try block");
