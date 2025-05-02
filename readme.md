@@ -17,10 +17,6 @@ A comprehensive web application for exploring and booking amazing nature tours. 
   - [Configuration](#configuration)
   - [Running the Application](#running-the-application)
 - [Technology Stack](#technology-stack)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-- [Author](#author)
 
 ## About
 
