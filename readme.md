@@ -17,7 +17,6 @@ A comprehensive web application for exploring and booking amazing nature tours. 
   - [Configuration](#configuration)
   - [Running the Application](#running-the-application)
 - [Technology Stack](#technology-stack)
-- [API Endpoints](#api-endpoints) (Optional - if you want to list them briefly)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
@@ -163,7 +162,3 @@ Make sure you have the following installed on your system:
 - **Payment Integration:**
   - [PayMongo](https://paymongo.com/)
 - **Other Libraries/Tools:** (List any other significant libraries you're using, e.g., `bcryptjs`, `jsonwebtoken`, `nodemailer`, etc.)
-
-## API Endpoints (Optional)
-
-If you want to provide a brief overview of your API endpoints:
